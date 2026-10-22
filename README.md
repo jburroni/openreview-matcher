@@ -15,6 +15,14 @@ git clone https://github.com/openreview/openreview-matcher.git
 pip install ./openreview-matcher
 ```
 
+For development, install it in editable mode instead (`pip install -e ./openreview-matcher`), or with [uv](https://docs.astral.sh/uv/):
+
+```
+cd openreview-matcher
+uv sync --python 3.10    # prod runs Python 3.10; add --extra full for flower
+uv run python -m matcher --help
+```
+
 ## Example Usage
 
 The matcher can be run from the command line. For example:
